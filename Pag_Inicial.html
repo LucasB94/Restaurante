@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+       <title>Restaurante Osíris</title>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="./Pag_Inicial.css" rel="stylesheet">
+</head>
+
+<body>
+       <header class="cabecalho">
+              <p class="osiris">Restaurante Osíris</p>
+              <div class="libra">
+                     <img src="Libra.png" alt="Libra">
+              </div>
+       </header>
+
+       <section>
+              <nav class="navegacao">
+                     <a href="Pag_Inicial.html"> <img src="Osiris.jpg" alt="Osiris" class="icon"> </a>
+
+                     <a onclick="abrirMensagem()" class="a">Tour</a>
+
+                     <a href="Cadastrar.html" class="a">Cadastrar</a>
+
+                     <a href="Cardapio.html" class="a">Cardápio</a>
+
+                     <a href="Reserva.html" class="a">Reserva</a>
+
+                     <a href="Localizacao.html" class="a">Localização</a>
+              </nav>
+       </section>
+
+       <section>
+              <article class="exp">
+                     <p class="tit_exp">A Experiência</p>
+                     <p class="tex_exp">Um lugar com um ponto de vista privilegiada, diretamente em frente ao mar e,
+                            juntamente com um sítio arqueológico com mais de 1000 anos, temos o prazer em servi-los
+                            com a mais alta gastronomia para ter-vos uma incrível e unica experiência.
+                            Faça-nos uma reserva e venha deliciar com um lugar encantador.</p>
+
+                     <div class="duvida">
+                            <a href="Posso_Ajudar.html"> <img src="Duvida.png" alt="duvida"> </a>
+                     </div>
+              </article>
+       </section>
+</body>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function abrirMensagem() {
+        swal({
+            title: "Ah Não!",
+            text: "No momento, não está disponível!",
+            icon: "error",
+            button: "Voltar",
+        });
+    }
+</script>
+
+</html>

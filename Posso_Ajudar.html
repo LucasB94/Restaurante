@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Posso Ajudar?</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Posso_Ajudar.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="ajuda">
+        <p class="apoio">Posso Ajudar?</p>
+    </header>
+
+    <section class="sugestao">
+        <p class="mensagem">Caso encontre alguma dúvida, erro, reclamação, mande-nos um e-mail!</p>
+        <textarea name="comentarios" class="comentarios" rows="20"></textarea>
+        <br />
+        <button onclick="abrirMensagem()" class="enviar">Enviar</button>
+        <a href="Pag_Inicial.html"> <button class="voltar">Voltar</button> </a>
+    </section>
+
+</body>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function abrirMensagem() {
+        swal({
+            title: "Agradecemos pela Opinião!",
+            text: "Iremos melhorar e atentar-nos sobre o detalhamento!",
+            icon: "success",
+            button: "Voltar",
+        });
+    }
+</script>
+
+</html>

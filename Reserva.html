@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reserva</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./Reserva.css" rel="stylesheet">
+    </head>
+
+    <body class="fundo">
+        <img src="Osiris.jpg" alt="osiris" class="osiris">
+    
+        <img src="Libra.png" alt="libra" class="libra">
+    
+        <div class="cadastro">        
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <label>Nome: </label> <input type="text" name="nome" class="formato"/>
+            <br/>
+            <label>Contato: </label> <input type="text" name="contato" class="formato" />
+            <br/>
+            <label>E-mail: </label> <input type="text" name="email" class="formato" />
+        </div>
+    
+        <input type="submit" class="limpar" value="Limpar" />
+        <input onclick="abrirAgendar()" type="submit" class="agendar" value="Agendar" />
+        <a href="Pag_Inicial.html" class="a"> <input type="submit" class="voltar" value="Voltar" /> </a>
+    
+        <img src="Duvida.png" alt="duvida" class="duvida">
+    
+    </body>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function abrirAgendar() {
+        swal({
+            title: "Agradecemos pelo agendamento!",
+            text: "Estamos ansioso pela tua visita!",
+            icon: "success",
+            button: "Voltar",
+        });
+    }
+</script>
+</html>

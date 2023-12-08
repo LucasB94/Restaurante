@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Cadastrar.css" rel="stylesheet">
+</head>
+
+<body class="fundo">
+    <img src="Osiris.jpg" alt="osiris" class="osiris">
+
+    <img src="Libra.png" alt="libra" class="libra">
+
+    <div class="cadastro">        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <label>Nome: </label> <input type="text" name="nome" class="formato"/>
+        <br/>
+        <label>Contato: </label> <input type="text" name="contato" class="formato" />
+        <br/>
+        <label>CPF: </label> <input type="text" name="cpf" class="formato" />
+        <br/>
+        <label>E-mail: </label> <input type="text" name="email" class="formato" />
+    </div>
+
+    <input type="submit" class="limpar" value="Limpar" />
+    <input onclick="abrirFinalizar()" type="submit" class="finalizar" value="Finalizar" />
+    <a href="Pag_Inicial.html" class="a"> <input type="submit" class="voltar" value="Voltar" /> </a>
+
+    <img src="Duvida.png" alt="duvida" class="duvida">
+
+</body>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function abrirFinalizar() {
+        swal({
+            title: "Agradecemos pelo cadastro!",
+            text: "Desfrute do melhor entretenimento gastronômico!",
+            icon: "success",
+            button: "Voltar",
+        });
+    }
+</script>
+
+</html>
